@@ -15,3 +15,7 @@ body.dark-mode {
     --text-color: #ffffff;
     --card-color: #1e1e1e;
 }
+body.dark-mode {
+    background: black !important;
+    color: white !important;
+}
