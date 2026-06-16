@@ -13,40 +13,74 @@
 <body>
 
 <header>
-    <h1>Projects</h1>
+
+    <div class="header-content">
+
+        <h1>Projects</h1>
+
+        <button id="theme-toggle"
+                aria-label="Toggle dark mode">
+            🌙
+        </button>
+
+    </div>
+
 </header>
 
 <nav aria-label="Main Navigation">
+
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html" aria-current="page">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+
 </nav>
 
 <main>
 
-    <section>
-        <h2>My Work</h2>
+<section class="projects-grid">
 
-        <article>
-            <h3>Portfolio Website</h3>
-            <p>Accessible portfolio website using HTML5.</p>
-        </article>
+    <article class="card">
 
-        <article>
-            <h3>Landing Page</h3>
-            <p>Responsive landing page design.</p>
-        </article>
+        <h2>Portfolio Website</h2>
 
-    </section>
+        <p>
+            Accessible portfolio website using semantic HTML.
+        </p>
+
+    </article>
+
+    <article class="card">
+
+        <h2>Landing Page</h2>
+
+        <p>
+            Modern responsive landing page.
+        </p>
+
+    </article>
+
+    <article class="card">
+
+        <h2>Dashboard UI</h2>
+
+        <p>
+            Admin dashboard interface using CSS Grid.
+        </p>
+
+    </article>
+
+</section>
 
 </main>
 
 <footer>
-    <p>&copy; 2026</p>
+    <p>&copy; 2026 Your Name</p>
 </footer>
+
+<script src="js/theme.js"></script>
 
 </body>
 </html>

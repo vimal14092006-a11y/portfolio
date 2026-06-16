@@ -26,50 +26,61 @@
 
 <body>
 
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+<a href="#main-content" class="skip-link">
+    Skip to main content
+</a>
 
-    <header role="banner">
-        <h1>John Doe</h1>
-        <p>Frontend Web Developer</p>
-    </header>
+<header>
+    <div class="header-content">
+        <div>
+            <h1>Your Name</h1>
+            <p>Frontend Web Developer</p>
+        </div>
 
-    <nav aria-label="Main Navigation">
+        <button id="theme-toggle"
+                aria-label="Toggle dark mode">
+            🌙
+        </button>
+    </div>
+</header>
+
+<nav aria-label="Main Navigation">
+    <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+
+    <section class="hero">
+        <h2>Hello, I'm Your Name</h2>
+
+        <p>
+            I build responsive, accessible and modern web applications.
+        </p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+
         <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
         </ul>
-    </nav>
+    </section>
 
-    <main id="main-content">
+</main>
 
-        <section aria-labelledby="welcome-heading">
-            <h2 id="welcome-heading">Welcome</h2>
+<footer>
+    <p>&copy; 2026 Your Name</p>
+</footer>
 
-            <p>
-                I build responsive, accessible, and modern web applications.
-            </p>
-        </section>
-
-        <section aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Skills</h2>
-
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 John Doe. All Rights Reserved.</p>
-    </footer>
+<script src="js/theme.js"></script>
 
 </body>
 </html>
