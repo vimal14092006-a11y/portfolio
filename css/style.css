@@ -1,42 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --card-color: #f4f4f4;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease;
 }
 
-header {
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
-    outline: 3px solid black;
-    outline-offset: 2px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-footer {
-    margin-top: 20px;
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-color: #1e1e1e;
 }
